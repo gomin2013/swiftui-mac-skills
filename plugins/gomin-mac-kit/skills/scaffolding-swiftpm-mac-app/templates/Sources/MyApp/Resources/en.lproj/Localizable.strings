@@ -1,0 +1,2 @@
+/* Keys used with String(localized:) / Text("…"). One .lproj folder per language. */
+"Hello, My App" = "Hello, My App";

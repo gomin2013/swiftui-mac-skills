@@ -1,0 +1,15 @@
+{
+  "name": "gomin",
+  "description": "Claude Code skills for building native macOS SwiftUI apps, extracted from Gomin Apps.",
+  "owner": {
+    "name": "gomin2013",
+    "url": "https://github.com/gomin2013"
+  },
+  "plugins": [
+    {
+      "name": "gomin-mac-kit",
+      "source": "./plugins/gomin-mac-kit",
+      "description": "SwiftUI macOS app building blocks from Hosts Manager and Git Exclude Manager: SwiftPM-only scaffold, Liquid Glass, tool-window panels, accent & gradient themes."
+    }
+  ]
+}
