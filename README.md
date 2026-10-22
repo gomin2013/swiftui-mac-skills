@@ -30,8 +30,8 @@ Requirements: macOS 14+ target, Swift 6, Xcode 26+ SDK for Liquid Glass.
 
 A private plugin, `gomin-mac-kit-pro`, builds on these skills. It's available to [GitHub Sponsors](https://github.com/sponsors/gomin2013):
 
-- **Available now:** AI agent panel (Claude, OpenAI, Gemini, Ollama, Apple Foundation Models), with streaming and visible thinking, Keychain-stored keys and Markdown replies
-- **Coming:** History panel · Help & About · in-app language switching (12 languages) · privileged helper over XPC · DMG release
+- **Available now:** AI agent panel (Claude, OpenAI, Gemini, Ollama, Apple Foundation Models), with streaming and visible thinking, Keychain-stored keys and Markdown replies · History panel (Photoshop-style, with pins)
+- **Coming:** Help & About · in-app language switching (12 languages) · privileged helper over XPC · DMG release
 
 ## License
 
