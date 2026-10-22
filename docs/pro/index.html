@@ -1,0 +1,170 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title data-th="SwiftUI Mac Skills Pro · skill เพิ่มเติมสำหรับผู้สนับสนุน">SwiftUI Mac Skills Pro · More skills for sponsors</title>
+  <meta name="description" data-th="Claude Code skill สำหรับผู้สนับสนุน: แผง AI Agent ที่รองรับหลายผู้ให้บริการ และประวัติการแก้ไขแบบ Photoshop จากแอป macOS ที่ใช้งานจริง" content="Claude Code skills for sponsors: a multi-provider AI Agent panel and Photoshop-style edit history, from shipping macOS apps.">
+  <link rel="canonical" href="https://gomin2013.github.io/swiftui-mac-skills/pro/">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="SwiftUI Mac Skills">
+  <meta property="og:title" content="SwiftUI Mac Skills Pro">
+  <meta property="og:url" content="https://gomin2013.github.io/swiftui-mac-skills/pro/">
+  <meta property="og:image" content="https://gomin2013.github.io/swiftui-mac-skills/assets/video/poster.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="theme-color" content="#f7f7f8" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#0c0d10" media="(prefers-color-scheme: dark)">
+  <link rel="icon" type="image/png" href="../favicon.png">
+  <link rel="apple-touch-icon" href="../assets/img/apple-touch-icon.png">
+  <link rel="stylesheet" href="https://unpkg.com/@phosphor-icons/web@2.1.1/src/regular/style.css">
+  <link rel="stylesheet" href="../assets/site.css">
+  <style>
+    /* Pro: green → blue gradient, so it reads apart from the free page's single teal. Both ends keep AA:
+       white on #047857 5.5:1 / #1d4ed8 6.7:1; gradient text on --bg ≥ 5.2:1 (light) and ≥ 9:1 (dark). */
+    :root { --pro-a: #047857; --pro-b: #1d4ed8; --pro-text-a: #047857; --pro-text-b: #1d4ed8; }
+    @media (prefers-color-scheme: dark) { :root { --pro-text-a: #34d399; --pro-text-b: #60a5fa; } }  /* blue end ≥ 7:1 on #0c0d10 */
+    .pro-grad, .tiers .cell strong { width: fit-content; background: linear-gradient(100deg, var(--pro-text-a), var(--pro-text-b)); -webkit-background-clip: text; background-clip: text; color: transparent; }
+    .page-hero { position: relative; isolation: isolate; }
+    .page-hero::before { content: ""; position: absolute; inset: -40px 0 -60px; z-index: -1; pointer-events: none;
+      background: radial-gradient(620px 300px at 18% 35%, rgb(16 185 129 / .20), transparent 70%),
+                  radial-gradient(620px 300px at 72% 15%, rgb(56 189 248 / .20), transparent 70%); }
+    .eyebrow, .cell .ico, .tiers .cell h3, .nav-links a[href="#tiers"] i { color: var(--pro-text-a); }
+    .btn-primary { background: linear-gradient(135deg, var(--pro-a), var(--pro-b)); color: #fff; border-color: transparent; }
+    .btn-primary:hover { background: linear-gradient(135deg, color-mix(in srgb, var(--pro-a) 85%, #000), color-mix(in srgb, var(--pro-b) 85%, #000)); }
+    .cell-d { background: linear-gradient(140deg, rgb(16 185 129 / .14), rgb(56 189 248 / .10) 55%, var(--surface) 90%); }
+    .tiers .cell { border: 1px solid transparent;
+      background: linear-gradient(var(--surface), var(--surface)) padding-box, linear-gradient(135deg, var(--pro-text-a), var(--pro-text-b)) border-box; }
+    .demo video { width: 100%; height: auto; aspect-ratio: 16 / 9; display: block; border-radius: var(--radius-img); background: #0a0d12;
+      border: 1px solid transparent; background: linear-gradient(#0a0d12, #0a0d12) padding-box, linear-gradient(135deg, var(--pro-text-a), var(--pro-text-b)) border-box; }
+    .tiers { display: grid; grid-template-columns: repeat(2, 1fr); gap: 16px; }
+    .tiers .cell strong { font-size: 2rem; display: block; margin: 4px 0; }
+    .soon { opacity: .65; }
+    .tiers + .cta-row { margin-top: 24px; }
+    @media (max-width: 720px) { .tiers { grid-template-columns: 1fr; } }
+  </style>
+  <script>try{var d=document.documentElement,n=(navigator.language||"").toLowerCase(),l=localStorage.getItem("sms.lang")||(/^zh-(hant|tw|hk|mo)/.test(n)?"zh-Hant":/^zh/.test(n)?"zh-Hans":/^fil/.test(n)?"tl":n.slice(0,2));if("en th ja ko vi id ms tl zh-Hans zh-Hant es ru".split(" ").indexOf(l)<0)l="en";d.lang=l;if(l==="th"){d.classList.add("th");document.querySelectorAll("[data-th]").forEach(function(e){e.tagName==="TITLE"?e.textContent=e.dataset.th:e.content=e.dataset.th})}else if(l!=="en")d.classList.add("i18n-wait")}catch(e){}</script>
+</head>
+<body>
+  <a class="skip" href="#main"><span class="en">Skip to content</span><span class="th">ข้ามไปที่เนื้อหา</span></a>
+  <header class="site-header">
+    <div class="wrap nav">
+      <a class="brand" href="../"><img src="../assets/img/gomin.png" alt="" width="30" height="30">SwiftUI Mac Skills</a>
+      <nav class="nav-links" aria-label="Main">
+        <a href="../#skills" class="hide-sm"><span class="en">Free skills</span><span class="th">skill ฟรี</span></a>
+        <a href="#tiers"><i class="ph ph-heart" aria-hidden="true"></i><span class="en">Sponsor</span><span class="th">สนับสนุน</span></a>
+      </nav>
+      <button type="button" class="lang-btn" data-lang-open aria-haspopup="dialog" aria-label="Language"><i class="ph ph-globe" aria-hidden="true"></i><span class="lang-name">English</span><span class="lang-code">en</span></button>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="page-hero">
+      <div class="wrap">
+        <p class="eyebrow reveal"><span class="en">For sponsors</span><span class="th">สำหรับผู้สนับสนุน</span></p>
+        <h1 class="reveal pro-grad"><span class="en">SwiftUI Mac Skills Pro</span><span class="th">SwiftUI Mac Skills Pro</span></h1>
+        <p class="lede reveal" data-d="1"><span class="en">The harder parts of the same apps, as Claude Code skills: tested code plus the provider quirks and pitfalls that cost us days.</span><span class="th">ส่วนที่ยากกว่าจากแอปชุดเดิม ทำเป็น Claude Code skill: โค้ดที่ทดสอบแล้ว พร้อมข้อควรระวังของแต่ละผู้ให้บริการที่เราเสียเวลาหาเป็นวันๆ</span></p>
+      </div>
+    </section>
+
+    <section id="demo" class="demo">
+      <div class="wrap">
+        <div class="section-head reveal">
+          <h2><span class="en">See Pro in 50 seconds</span><span class="th">ดูรุ่น Pro ใน 50 วินาที</span></h2>
+          <p><span class="en">The AI Agent streaming a live answer, History jumping back. Narrated in Thai, with captions.</span><span class="th">แผง AI Agent ตอบแบบ stream สดๆ และ History ที่ย้อนกลับได้ พากย์ไทยพร้อมคำบรรยาย</span></p>
+        </div>
+        <video class="reveal" src="../assets/video/swiftui-mac-skills-pro-demo-16x9.mp4" poster="../assets/video/pro-poster.png" controls preload="metadata" playsinline width="1920" height="1080"></video>
+      </div>
+    </section>
+
+    <section id="inside">
+      <div class="wrap">
+        <div class="section-head reveal">
+          <h2><span class="en">What's inside</span><span class="th">มีอะไรบ้าง</span></h2>
+        </div>
+        <div class="bento">
+          <article class="cell cell-d reveal">
+            <i class="ph ph-sparkle ico" aria-hidden="true"></i>
+            <h3><span class="en">AI Agent panel</span><span class="th">แผง AI Agent</span></h3>
+            <p><span class="en">Claude, OpenAI, Gemini, Ollama and Apple Foundation Models behind one service. Streaming with visible thinking, keys in the Keychain, Markdown replies, a recommended-model list. 33 tests.</span><span class="th">Claude, OpenAI, Gemini, Ollama และ Apple Foundation Models ในบริการเดียว stream พร้อมแสดงความคิดของโมเดล เก็บ key ใน Keychain ตอบเป็น Markdown และมีรายชื่อโมเดลที่แนะนำ มี 33 test</span></p>
+          </article>
+          <article class="cell cell-e reveal" data-d="1">
+            <i class="ph ph-clock-counter-clockwise ico" aria-hidden="true"></i>
+            <h3><span class="en">Edit history</span><span class="th">ประวัติการแก้ไข</span></h3>
+            <p><span class="en">A Photoshop-style History panel: 30 states, click to go back, pins that survive a relaunch, history per tab. 9 tests.</span><span class="th">แผง History แบบ Photoshop: 30 สถานะ คลิกเพื่อย้อนกลับ pin ที่อยู่รอดหลังเปิดแอปใหม่ และ history แยกต่อแท็บ มี 9 test</span></p>
+          </article>
+          <article class="cell cell-f reveal soon">
+            <i class="ph ph-hourglass ico" aria-hidden="true"></i>
+            <h3><span class="en">Coming next</span><span class="th">กำลังจะมา</span></h3>
+            <p><span class="en">In-app language switching (12 languages) · Help and About panels · Privileged helper over XPC · DMG release.</span><span class="th">สลับภาษาในแอป (12 ภาษา) · แผง Help และ About · Privileged helper ผ่าน XPC · การออก DMG</span></p>
+          </article>
+          <article class="cell cell-e reveal" data-d="1">
+            <i class="ph ph-scroll ico" aria-hidden="true"></i>
+            <h3><span class="en">Supporter License</span><span class="th">สัญญาอนุญาตสำหรับผู้สนับสนุน</span></h3>
+            <p><span class="en">Use the skills and their code in your own apps, commercial too. Please don't redistribute the skills.</span><span class="th">ใช้ skill และโค้ดในแอปของคุณได้ รวมถึงแอปเชิงพาณิชย์ ขอเพียงอย่าแจกจ่าย skill ต่อ</span></p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="tiers">
+      <div class="wrap">
+        <div class="section-head reveal">
+          <h2><span class="en">Get access through GitHub Sponsors</span><span class="th">รับสิทธิ์ผ่าน GitHub Sponsors</span></h2>
+          <p><span class="en">Sponsor at either tier below and you'll get an invite to the private repository.</span><span class="th">สนับสนุนใน tier ใดก็ได้ด้านล่าง แล้วจะได้รับคำเชิญเข้า repository ส่วนตัว</span></p>
+        </div>
+        <div class="tiers">
+          <article class="cell reveal">
+            <h3><span class="en">Monthly</span><span class="th">รายเดือน</span></h3>
+            <strong>$5</strong>
+            <p><span class="en">Access while you sponsor.</span><span class="th">ได้สิทธิ์ตลอดที่ยังสนับสนุนอยู่</span></p>
+          </article>
+          <article class="cell reveal" data-d="1">
+            <h3><span class="en">One year, one payment</span><span class="th">จ่ายครั้งเดียว 1 ปี</span></h3>
+            <strong>$60</strong>
+            <p><span class="en">The same as 12 months of the monthly tier.</span><span class="th">เท่ากับ tier รายเดือน 12 เดือน</span></p>
+          </article>
+        </div>
+        <div class="cta-row reveal">
+          <a class="btn btn-primary" href="https://github.com/sponsors/gomin2013" target="_blank" rel="noopener"><i class="ph ph-heart" aria-hidden="true"></i><span class="en">Sponsor on GitHub</span><span class="th">สนับสนุนบน GitHub</span></a>
+        </div>
+      </div>
+    </section>
+
+    <section id="install">
+      <div class="wrap">
+        <div class="section-head reveal">
+          <h2><span class="en">Install</span><span class="th">ติดตั้ง</span></h2>
+          <p><span class="en">After you accept the invite, in Claude Code:</span><span class="th">หลังจากตอบรับคำเชิญแล้ว ใน Claude Code:</span></p>
+        </div>
+        <pre class="code-block reveal">/plugin marketplace add gomin2013/swiftui-mac-skills
+/plugin marketplace add gomin2013/swiftui-mac-skills-pro
+/plugin install gomin-mac-kit@gomin
+/plugin install gomin-mac-kit-pro@gomin-pro</pre>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap foot">
+      <a class="brand" href="../"><img src="../assets/img/gomin.png" alt="" width="30" height="30">SwiftUI Mac Skills</a>
+      <div class="foot-links">
+        <nav aria-label="Footer">
+          <a href="../"><span class="en">Free skills</span><span class="th">skill ฟรี</span></a>
+        </nav>
+        <nav aria-label="Gomin Apps">
+          <a href="https://gomin2013.github.io/">Gomin Apps</a>
+          <a href="/hosts-manager/">Hosts Manager</a>
+          <a href="/git-exclude-manager/">Git Exclude Manager</a>
+          <a href="/ai-voice-manager/">AI Voice Manager</a>
+          <a href="/swiftui-mac-skills/">SwiftUI Mac Skills</a>
+          <a href="/profile/"><span class="en">Profile</span><span class="th">โปรไฟล์</span></a>
+          <a href="https://github.com/gomin2013/swiftui-mac-skills" target="_blank" rel="noopener">GitHub</a>
+          <a href="https://github.com/sponsors/gomin2013" target="_blank" rel="noopener"><span class="en">Sponsor</span><span class="th">สนับสนุน</span></a>
+        </nav>
+      </div>
+      <small><span class="en">© 2026 Watthajak Jinasam. Not affiliated with Apple or Anthropic.</span><span class="th">© 2026 Watthajak Jinasam ไม่มีส่วนเกี่ยวข้องกับ Apple หรือ Anthropic</span></small>
+    </div>
+  </footer>
+  <script src="../assets/site.js" defer></script>
+</body>
+</html>

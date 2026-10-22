@@ -9,7 +9,7 @@
     {
       "name": "gomin-mac-kit",
       "source": "./plugins/gomin-mac-kit",
-      "description": "SwiftUI macOS app building blocks from Hosts Manager and Git Exclude Manager: SwiftPM-only scaffold, Liquid Glass, tool-window panels, accent & gradient themes."
+      "description": "SwiftUI macOS app building blocks from Hosts Manager, Git Exclude Manager and AI Voice Manager: HTML prototype first, SwiftPM-only scaffold, Liquid Glass, tool-window panels, accent & gradient themes."
     }
   ]
 }

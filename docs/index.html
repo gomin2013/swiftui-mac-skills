@@ -1,0 +1,184 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title data-th="SwiftUI Mac Skills · skill ฟรีสำหรับ Claude Code สร้างแอป Mac แบบ Liquid Glass">SwiftUI Mac Skills · Free Claude Code skills for Liquid Glass Mac apps</title>
+  <meta name="description" data-th="Claude Code plugin ฟรี: สร้างแอป macOS SwiftUI ไม่ต้องมี Xcode project พร้อม Liquid Glass แผงเครื่องมือแบบ IDE และธีมสี จากแอปที่ใช้งานจริงสามตัว" content="A free Claude Code plugin: build macOS SwiftUI apps without an Xcode project, with real Liquid Glass, an IDE-style panel rail and accent themes — taken from three shipping apps.">
+  <link rel="canonical" href="https://gomin2013.github.io/swiftui-mac-skills/">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="SwiftUI Mac Skills">
+  <meta property="og:title" data-th="SwiftUI Mac Skills · skill ฟรีสำหรับ Claude Code" content="SwiftUI Mac Skills · Free Claude Code skills">
+  <meta property="og:description" data-th="ติดตั้ง plugin เดียว Claude ก็สร้างแอป Mac แบบ Liquid Glass ได้ถูกวิธี" content="One plugin, and Claude builds a native Liquid Glass Mac app the right way.">
+  <meta property="og:url" content="https://gomin2013.github.io/swiftui-mac-skills/">
+  <meta property="og:image" content="https://gomin2013.github.io/swiftui-mac-skills/assets/video/poster.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="theme-color" content="#f7f7f8" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#0c0d10" media="(prefers-color-scheme: dark)">
+  <link rel="icon" type="image/png" href="favicon.png">
+  <link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png">
+  <link rel="stylesheet" href="https://unpkg.com/@phosphor-icons/web@2.1.1/src/regular/style.css">
+  <link rel="stylesheet" href="assets/site.css">
+  <style>
+    .hero .code-block { white-space: pre-wrap; overflow-wrap: anywhere; font-size: .82em; }
+    .demo video { width: 100%; height: auto; aspect-ratio: 16 / 9; display: block; border-radius: var(--radius-img); border: 1px solid var(--line); background: #0a0d12; }
+    .demo .cta-note { margin-top: 12px; }
+    .cell pre.code-block { margin-top: 12px; }
+  </style>
+  <script>try{var d=document.documentElement,n=(navigator.language||"").toLowerCase(),l=localStorage.getItem("sms.lang")||(/^zh-(hant|tw|hk|mo)/.test(n)?"zh-Hant":/^zh/.test(n)?"zh-Hans":/^fil/.test(n)?"tl":n.slice(0,2));if("en th ja ko vi id ms tl zh-Hans zh-Hant es ru".split(" ").indexOf(l)<0)l="en";d.lang=l;if(l==="th"){d.classList.add("th");document.querySelectorAll("[data-th]").forEach(function(e){e.tagName==="TITLE"?e.textContent=e.dataset.th:e.content=e.dataset.th})}else if(l!=="en")d.classList.add("i18n-wait")}catch(e){}</script>
+</head>
+<body>
+  <a class="skip" href="#main"><span class="en">Skip to content</span><span class="th">ข้ามไปที่เนื้อหา</span></a>
+  <header class="site-header">
+    <div class="wrap nav">
+      <a class="brand" href="./"><img src="assets/img/gomin.png" alt="" width="30" height="30">SwiftUI Mac Skills</a>
+      <nav class="nav-links" aria-label="Main">
+        <a href="#skills" class="hide-sm"><span class="en">Skills</span><span class="th">Skill</span></a>
+        <a href="pro/"><i class="ph ph-lock-key" aria-hidden="true"></i>Pro</a>
+        <a href="https://github.com/gomin2013/swiftui-mac-skills" target="_blank" rel="noopener" class="hide-sm">GitHub</a>
+      </nav>
+      <button type="button" class="lang-btn" data-lang-open aria-haspopup="dialog" aria-label="Language"><i class="ph ph-globe" aria-hidden="true"></i><span class="lang-name">English</span><span class="lang-code">en</span></button>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="hero">
+      <div class="wrap hero-grid">
+        <div class="hero-copy">
+          <p class="eyebrow reveal"><span class="en">Free Claude Code plugin</span><span class="th">Claude Code plugin ฟรี</span></p>
+          <h1 class="reveal">
+            <span class="en">One plugin. Claude builds a Liquid Glass Mac app the right way.</span>
+            <span class="th">ติดตั้ง plugin เดียว Claude ก็สร้างแอป Mac แบบ Liquid Glass ได้ถูกวิธี</span>
+          </h1>
+          <p class="lede reveal" data-d="1">
+            <span class="en">Five skills taken from shipping macOS apps: a clickable prototype first, then a SwiftUI app with no Xcode project, real Liquid Glass, an IDE-style panel rail, and accent and gradient themes.</span>
+            <span class="th">5 skill จากแอป macOS ที่ใช้งานจริง: ทำ prototype ที่กดได้จริงก่อน แล้วค่อยเป็นแอป SwiftUI ที่ไม่ต้องมี Xcode project, Liquid Glass ที่ขึ้นจริง, แผงเครื่องมือแบบ IDE และธีมสี accent กับ gradient</span>
+          </p>
+          <pre class="code-block reveal" data-d="2">/plugin marketplace add gomin2013/swiftui-mac-skills
+/plugin install gomin-mac-kit@gomin</pre>
+          <div class="cta-row reveal" data-d="2">
+            <a class="btn btn-primary" href="https://github.com/gomin2013/swiftui-mac-skills" target="_blank" rel="noopener"><i class="ph ph-github-logo" aria-hidden="true"></i><span class="en">View on GitHub</span><span class="th">ดูบน GitHub</span></a>
+            <a class="btn btn-ghost" href="#demo"><i class="ph ph-play-circle" aria-hidden="true"></i><span class="en">Watch the demo</span><span class="th">ดูวิดีโอสาธิต</span></a>
+          </div>
+        </div>
+        <div class="hero-shot reveal" data-d="1">
+          <img class="shot" src="assets/img/app-lagoon.png" width="1280" height="800" fetchpriority="high"
+               alt="A Mac app built with the four skills: Liquid Glass tool window with the Appearance panel, 16 accent colours and 8 gradient themes">
+        </div>
+      </div>
+    </section>
+
+    <section class="facts" aria-label="At a glance">
+      <div class="wrap">
+        <ul>
+          <li class="reveal"><i class="ph ph-code" aria-hidden="true"></i><span><strong><span class="en">Free and open source</span><span class="th">ฟรีและโอเพนซอร์ส</span></strong><span class="en">MIT license</span><span class="th">สัญญาอนุญาต MIT</span></span></li>
+          <li class="reveal" data-d="1"><i class="ph ph-apple-logo" aria-hidden="true"></i><span><strong><span class="en">Native macOS</span><span class="th">macOS แท้</span></strong><span class="en">Swift 6, macOS 14+, Liquid Glass on macOS 26</span><span class="th">Swift 6, macOS 14 ขึ้นไป, Liquid Glass บน macOS 26</span></span></li>
+          <li class="reveal" data-d="2"><i class="ph ph-package" aria-hidden="true"></i><span><strong><span class="en">Zero dependencies</span><span class="th">ไม่มี dependency</span></strong><span class="en">Plain Swift Package, no Xcode project</span><span class="th">Swift Package ล้วน ไม่มี Xcode project</span></span></li>
+          <li class="reveal" data-d="3"><i class="ph ph-check-circle" aria-hidden="true"></i><span><strong><span class="en">Tested</span><span class="th">ทดสอบแล้ว</span></strong><span class="en">Every template compiles and its tests pass</span><span class="th">ทุก template คอมไพล์ผ่านและ test ผ่าน</span></span></li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="demo" class="demo">
+      <div class="wrap">
+        <div class="section-head reveal">
+          <h2><span class="en">See it in 50 seconds</span><span class="th">ดูการใช้งานใน 50 วินาที</span></h2>
+          <p><span class="en">Install, ask Claude for an app, get real Liquid Glass. Narrated in Thai, with captions.</span><span class="th">ติดตั้ง บอก Claude ว่าอยากได้แอปแบบไหน แล้วได้ Liquid Glass จริง พากย์ไทยพร้อมคำบรรยาย</span></p>
+        </div>
+        <video class="reveal" src="assets/video/swiftui-mac-skills-demo-16x9.mp4" poster="assets/video/poster.png" controls preload="metadata" playsinline width="1920" height="1080"></video>
+      </div>
+    </section>
+
+    <section id="skills">
+      <div class="wrap">
+        <div class="section-head reveal">
+          <h2><span class="en">Five skills, each with code that runs</span><span class="th">5 skill แต่ละตัวมีโค้ดที่ใช้ได้จริง</span></h2>
+          <p><span class="en">Claude picks the right one by itself. Each carries the pitfalls we hit, not just the happy path.</span><span class="th">Claude เลือกใช้เอง แต่ละ skill มีข้อควรระวังที่เราเจอมาจริง ไม่ใช่แค่ตัวอย่างที่ทุกอย่างราบรื่น</span></p>
+        </div>
+        <div class="bento">
+          <article class="cell cell-e cell-wide reveal">
+            <i class="ph ph-browser ico" aria-hidden="true"></i>
+            <h3><span class="en">Prototype first</span><span class="th">ทำ prototype ก่อน</span></h3>
+            <p><span class="en">A clickable HTML prototype you change in seconds, round after round, then hand to SwiftUI as the spec: its own functions give your tests their expected values, and its strings become Localizable.strings — with a check that stops on a key two string tables define differently.</span><span class="th">prototype HTML ที่กดได้จริง แก้ได้ในไม่กี่วินาทีทุกรอบ แล้วส่งต่อเป็นสเปกให้ SwiftUI: ฟังก์ชันใน prototype ให้ค่าที่ test ต้องได้ และข้อความกลายเป็น Localizable.strings พร้อมตัวเช็คที่หยุดเมื่อคีย์เดียวกันมีข้อความไม่ตรงกันในสองตาราง</span></p>
+            <pre class="code-block">index.html  →  Localizable.strings + expected test values</pre>
+          </article>
+          <article class="cell cell-d reveal">
+            <i class="ph ph-hammer ico" aria-hidden="true"></i>
+            <h3><span class="en">App scaffold</span><span class="th">โครงแอป</span></h3>
+            <p><span class="en">A Dock app from a Swift Package, a build script that makes a signed .app, and the fix most people miss: swift build stamps the binary with SDK 14, so macOS 26 draws it without Liquid Glass.</span><span class="th">แอปบน Dock จาก Swift Package สคริปต์ build ที่ได้ .app ที่ sign แล้ว และจุดที่หลายคนพลาด: swift build ประทับ SDK เป็น 14 macOS 26 เลยไม่แสดง Liquid Glass</span></p>
+            <pre class="code-block">sdk 14.0  →  sdk 27.0</pre>
+          </article>
+          <article class="cell cell-e reveal" data-d="1">
+            <i class="ph ph-drop ico" aria-hidden="true"></i>
+            <h3><span class="en">Liquid Glass</span><span class="th">Liquid Glass</span></h3>
+            <p><span class="en">Glass surfaces and buttons on macOS 26, a matching material on macOS 14 and 15 — from three modifiers, so no availability checks spread through your views.</span><span class="th">พื้นผิวและปุ่มกระจกบน macOS 26 และ material ที่ใกล้เคียงบน macOS 14–15 จาก modifier 3 ตัว ไม่ต้องเช็กเวอร์ชันกระจายทั่วโค้ด</span></p>
+          </article>
+          <article class="cell cell-f reveal">
+            <i class="ph ph-sidebar-simple ico" aria-hidden="true"></i>
+            <h3><span class="en">Tool-window panels</span><span class="th">แผงเครื่องมือ</span></h3>
+            <p><span class="en">An IDE-style icon rail: one panel at a time, ⌥⌘ shortcuts, and panels that keep their state when you switch — a chat stays where it was.</span><span class="th">แถบไอคอนแบบ IDE เปิดทีละแผง มีคีย์ลัด ⌥⌘ และสลับแผงแล้วข้อมูลไม่หาย แชตก็ยังอยู่ที่เดิม</span></p>
+          </article>
+          <article class="cell cell-e reveal" data-d="1">
+            <i class="ph ph-palette ico" aria-hidden="true"></i>
+            <h3><span class="en">Accent and gradient themes</span><span class="th">สีและธีม</span></h3>
+            <p><span class="en">Light, Dark or System; 16 accents measured to read well in both modes; 8 gradient themes used as ambient light, never under text.</span><span class="th">โหมดสว่าง มืด หรือตามระบบ สี accent 16 สีที่วัดแล้วว่าอ่านง่ายทั้งสองโหมด และธีม gradient 8 แบบใช้เป็นแสงพื้นหลัง ไม่วางใต้ตัวหนังสือ</span></p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="from">
+      <div class="wrap">
+        <div class="section-head reveal">
+          <h2><span class="en">Taken from three shipping apps</span><span class="th">ดึงมาจากแอปที่ใช้งานจริงสามตัว</span></h2>
+          <p><span class="en">All three are free and open source — open them to see every skill at work.</span><span class="th">ทั้งสามแอปฟรีและโอเพนซอร์ส เปิดดูได้ว่าแต่ละ skill ทำงานจริงอย่างไร</span></p>
+          <div class="cta-row">
+            <a class="btn btn-ghost" href="https://gomin2013.github.io/hosts-manager/"><img src="assets/img/hm-icon.png" alt="" width="22" height="22">Hosts Manager</a>
+            <a class="btn btn-ghost" href="https://gomin2013.github.io/git-exclude-manager/"><img src="assets/img/gem-icon.png" alt="" width="22" height="22">Git Exclude Manager</a>
+            <a class="btn btn-ghost" href="https://gomin2013.github.io/ai-voice-manager/"><img src="assets/img/avm-icon.png" alt="" width="22" height="22">AI Voice Manager</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="closing">
+      <div class="wrap">
+        <div class="closing-inner reveal">
+          <img src="assets/img/gomin-mascot.png" width="512" height="512" alt="" loading="lazy">
+          <div>
+            <h2><span class="en">Want the AI Agent panel and History too?</span><span class="th">อยากได้แผง AI Agent และ History ด้วยไหม</span></h2>
+            <p class="lede"><span class="en">SwiftUI Mac Skills Pro is for sponsors: more skills from the same apps.</span><span class="th">SwiftUI Mac Skills Pro สำหรับผู้สนับสนุน: skill เพิ่มเติมจากแอปชุดเดียวกัน</span></p>
+            <div class="cta-row">
+              <a class="btn btn-primary" href="pro/"><i class="ph ph-lock-key" aria-hidden="true"></i><span class="en">See Pro</span><span class="th">ดูรุ่น Pro</span></a>
+              <a class="btn btn-ghost" href="https://github.com/sponsors/gomin2013" target="_blank" rel="noopener"><i class="ph ph-heart" aria-hidden="true"></i><span class="en">Sponsor</span><span class="th">สนับสนุน</span></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap foot">
+      <a class="brand" href="./"><img src="assets/img/gomin.png" alt="" width="30" height="30">SwiftUI Mac Skills</a>
+      <div class="foot-links">
+        <nav aria-label="Footer">
+          <a href="pro/">Pro</a>
+        </nav>
+        <nav aria-label="Gomin Apps">
+          <a href="https://gomin2013.github.io/">Gomin Apps</a>
+          <a href="/hosts-manager/">Hosts Manager</a>
+          <a href="/git-exclude-manager/">Git Exclude Manager</a>
+          <a href="/ai-voice-manager/">AI Voice Manager</a>
+          <a href="/swiftui-mac-skills/">SwiftUI Mac Skills</a>
+          <a href="/profile/"><span class="en">Profile</span><span class="th">โปรไฟล์</span></a>
+          <a href="https://github.com/gomin2013/swiftui-mac-skills" target="_blank" rel="noopener">GitHub</a>
+          <a href="https://github.com/sponsors/gomin2013" target="_blank" rel="noopener"><span class="en">Sponsor</span><span class="th">สนับสนุน</span></a>
+        </nav>
+      </div>
+      <small><span class="en">© 2026 Watthajak Jinasam. Released under the MIT License. Not affiliated with Apple or Anthropic.</span><span class="th">© 2026 Watthajak Jinasam เผยแพร่ภายใต้สัญญาอนุญาต MIT ไม่มีส่วนเกี่ยวข้องกับ Apple หรือ Anthropic</span></small>
+    </div>
+  </footer>
+  <script src="assets/site.js" defer></script>
+</body>
+</html>

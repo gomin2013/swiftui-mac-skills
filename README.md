@@ -1,8 +1,11 @@
 # swiftui-mac-skills
 
-Claude Code skills for building native macOS SwiftUI apps. They are extracted from two shipping apps,
-[Hosts Manager](https://gomin2013.github.io/hosts-manager/) and
-[Git Exclude Manager](https://gomin2013.github.io/git-exclude-manager/).
+**Website:** https://gomin2013.github.io/swiftui-mac-skills/ · **Pro:** https://gomin2013.github.io/swiftui-mac-skills/pro/
+
+Claude Code skills for building native macOS SwiftUI apps. They are extracted from three shipping apps,
+[Hosts Manager](https://gomin2013.github.io/hosts-manager/),
+[Git Exclude Manager](https://gomin2013.github.io/git-exclude-manager/) and
+[AI Voice Manager](https://gomin2013.github.io/ai-voice-manager/).
 
 Each skill has real, compiling code to copy and the pitfalls we hit getting it right.
 
@@ -19,6 +22,7 @@ Then ask Claude something like *"start a new macOS SwiftUI app with Liquid Glass
 
 | Skill | What you get |
 |---|---|
+| `prototyping-mac-app-in-html` | A clickable HTML prototype to iterate on before any Swift, a window chrome shared by every app in the family, then the prototype as the spec: its functions give your tests their expected values and `extract-strings.mjs` turns its strings into `Localizable.strings` (and stops on a key two tables define differently) |
 | `scaffolding-swiftpm-mac-app` | SwiftPM-only app (no `.xcodeproj`), `build-app.sh` → signed `.app`, and the SDK-stamp fix without which macOS 26 shows no Liquid Glass |
 | `adopting-liquid-glass` | `glassSurface` / `glassButton` / `glassGroup`: glass on macOS 26 with a material fallback on 14–15 |
 | `building-tool-window-panels` | IDE-style icon rail with one panel at a time, ⌥⌘1…n shortcuts, and panels that keep their state when you switch |

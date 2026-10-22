@@ -1,7 +1,7 @@
 {
   "name": "gomin-mac-kit",
-  "version": "0.1.0",
-  "description": "SwiftUI macOS app building blocks from Hosts Manager and Git Exclude Manager: SwiftPM-only scaffold, Liquid Glass, tool-window panels, accent & gradient themes.",
+  "version": "0.2.0",
+  "description": "SwiftUI macOS app building blocks from Hosts Manager, Git Exclude Manager and AI Voice Manager: HTML prototype first, SwiftPM-only scaffold, Liquid Glass, tool-window panels, accent & gradient themes.",
   "author": { "name": "Watthajak Jinasam", "url": "https://github.com/gomin2013" },
   "homepage": "https://github.com/gomin2013/swiftui-mac-skills",
   "license": "MIT"
